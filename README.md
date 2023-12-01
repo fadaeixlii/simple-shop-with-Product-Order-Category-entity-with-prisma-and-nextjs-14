@@ -2,7 +2,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+first run a migration to create your database with prisma:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+for to have some data plz run some queries in `prisma queries`.
+
+for easy way plz install [SQLite extensions](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and `SQLite : Run Query` in query files.
+
+for run socket.io server for updating status of orders run this before start project:
+
+```bash
+npm run server
+```
 
 ```bash
 npm run dev
